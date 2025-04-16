@@ -1,0 +1,124 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  background-image: 'C:/Users/LENOVO/Desktop/assignment-3/client/src/asthetics/bdac327b05ddaa05216dfa08c9e734c3.jpg';
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Stylish gradient background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Add a container for the app to center the content */
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Generic button styling */
+button {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #a29bfe;
+  transform: scale(1.05);
+}
+
+/* Card Container (login/register form box) */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  width: 350px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Text Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #6c5ce7;
+}
+
+/* Form Label */
+label {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* Link Style (e.g., for register/login navigation) */
+a {
+  color: #a29bfe;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #6c5ce7;
+}
+
+/* Footer Style */
+footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #ddd;
+}
+
+footer a {
+  color: #a29bfe;
+}
+

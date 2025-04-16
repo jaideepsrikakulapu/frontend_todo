@@ -1,0 +1,163 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    background-image: url('./bdac327b05ddaa05216dfa08c9e734c3.jpg'); /* Set your image */
+    background-size: cover; /* Ensure the image covers the whole screen */
+    background-position: center center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Login container style */
+  .login-container {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background for the form */
+    border-radius: 16px;
+    padding: 40px 35px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 360px;
+    animation: slideIn 1s ease forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  
+  /* Slide in animation */
+  @keyframes slideIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Heading style */
+  h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 24px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Fade in animation for text */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Input group style */
+  .input-group {
+    position: relative;
+    margin-bottom: 35px;
+  }
+  
+  /* Input field styles */
+  .input-group input {
+    width: 100%;
+    padding: 14px 12px 14px 40px;
+    background: rgba(255, 255, 255, 0.1); /* Transparent background */
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+  }
+  
+  /* Focus effect for input fields */
+  .input-group input:focus {
+    border-color: #a29bfe;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Floating label */
+  .input-group label {
+    position: absolute;
+    left: 40px;
+    top: 14px;
+    color: #ccc;
+    pointer-events: none;
+    font-size: 16px;
+    transition: 0.3s ease all;
+  }
+  
+  /* Animation for label when focused */
+  .input-group input:focus + label,
+  .input-group input:valid + label {
+    top: -10px;
+    left: 10px;
+    font-size: 13px;
+    color: #f0f0f0;
+    background: transparent;
+  }
+  
+  /* Input icon styles */
+  .input-icon {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    color: #ccc;
+    font-size: 18px;
+    transition: 0.3s ease;
+  }
+  
+  /* Change input icon color when input is focused */
+  .input-group input:focus ~ .input-icon {
+    color: #a29bfe;
+  }
+  
+  /* Button styles */
+  button {
+    width: 100%;
+    padding: 13px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Hover effect on button */
+  button:hover {
+    background-color: #a29bfe;
+    transform: scale(1.05);
+  }
+  
+  /* Footer style */
+  .login-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #eee;
+    font-size: 14px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Hover effect on input fields */
+  .input-group input:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+  }
+  

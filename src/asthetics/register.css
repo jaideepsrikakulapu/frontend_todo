@@ -1,0 +1,108 @@
+/* register.css */
+
+body {
+    background-image: 'C:/Users/LENOVO/Desktop/assignment-3/client/src/asthetics/bdac327b05ddaa05216dfa08c9e734c3.jpg';
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .register-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 45px 35px;
+    width: 400px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    animation: dropIn 1.2s ease forwards;
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  
+  @keyframes dropIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    color: #fff;
+    outline: none;
+  }
+  
+  .input-box label {
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-box input:focus + label,
+  .input-box input:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #f1f1f1;
+  }
+  
+  .register-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background-color: #00c6ff;
+    color: white;
+    font-size: 17px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .register-btn:hover {
+    background-color: #0072ff;
+    transform: scale(1.05);
+  }
+  
+  .register-footer {
+    text-align: center;
+    color: #f0f0f0;
+    margin-top: 20px;
+    font-size: 14px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
