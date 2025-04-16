@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from '../api/axios';
 import TaskList from '../components/TaskList';
-import '../asthetics/dashboard.css'
+import '../asthetics/dashboard.css';
 
 const Dashboard = () => {
   const [tasks, setTasks] = useState([]);
@@ -12,7 +12,14 @@ const Dashboard = () => {
       .then(res => setTasks(res.data));
   }, [token]);
 
-  return <TaskList tasks={tasks} setTasks={setTasks} token={token} />;
+  return (
+    <div className="dashboard-container">
+      <h2>Your Tasks</h2>
+      <div className="task-box">
+        <TaskList tasks={tasks} setTasks={setTasks} token={token} />
+      </div>
+    </div>
+  );
 };
 
 export default Dashboard;
